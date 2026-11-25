@@ -6629,7 +6629,7 @@ const locations = [
   { name: 'Amon Hen', x: 1167, y: 834, owner: 'gondor', eventDate: 'To Be Announced', lore: "The old stone steps lead through the trees to the ruined Seat of Seeing. Gondor’s kings once used this hill as a lookout, and the summit still looks out over the waters of Nen Hithoel and the falls of Rauros.", factions: ['Gondor'], topPlayers: [], screenshots: [], history: [] },
   { name: 'Nindalf', x: 1279, y: 845, owner: 'neutral', eventDate: 'To Be Announced', lore: "The Wetwang is a bleak stretch of marshland, filled with reed beds, muddy flats and hidden pools. Firm ground can give way without warning, and anyone who does not know the paths risks losing their way in the reeds and water.", factions: [], topPlayers: [], screenshots: [], history: [] },
   { name: 'Black Gate', x: 1427, y: 856, owner: 'mordor', eventDate: 'To Be Announced', lore: "The Morannon, or Black Gate, is the great northern entrance to Mordor, built by Sauron to seal the pass of Cirith Gorgor between the Ephel Dúath and the Ered Lithui. After his defeat in the War of the Last Alliance, Gondor raised two watchtowers, Carchost and Narchost, on either side of the pass, known together as the Towers of the Teeth. For centuries, they guarded the entrance to the Black Land, keeping watch over the remnants of Sauron's power. As Gondor's strength waned, its watch eventually failed, and the towers fell into the hands of Sauron's servants, becoming part of Mordor's defences once more.", factions: ['Mordor'], topPlayers: [], screenshots: [], history: [] },
-  { name: 'Osgiliath', x: 1360, y: 1034, owner: 'gondor', eventDate: 'Sunday, 13.12.2026', eventDateISO: '2026-11-29T18:00:00.000Z', eventDateLabel: 'Sunday, 13.12.2026', eventDisplayName: 'Siege of Osgiliath', eventPreviewBase: 'osgiliath', eventAbout: "The Shadow of Mordor has long been gathering over the realms of the Free Peoples. Now, Sauron moves openly, and the lands of the West stand on the brink of a great war. On 20 June, T.A. 3018, the armies of Mordor launch a great assault upon Osgiliath, the ancient capital of Gondor and a vital stronghold spanning the River Anduin. Boromir and Faramir, sons of Steward Denethor, stand alongside Gondor's defenders against the invading host. The great battle has begun. The War of the Ring is upon Middle-earth!", isNext: true, lore: "Osgiliath was once the proud capital of Gondor, but war and neglect have left its great halls broken and its avenues deserted. The Anduin divides the ruined city, and its crossings remain vital: whoever holds them can threaten the road to Minas Tirith itself.", factions: ['Gondor'], topPlayers: [], screenshots: [], history: [], underSiege: true, attacksFrom: ['Minas Morgul'] },
+  { name: 'Osgiliath', x: 1360, y: 1034, owner: 'gondor', eventDate: 'Sunday, 13.12.2026', eventDateISO: '2026-12-13T18:00:00.000Z', eventDateLabel: 'Sunday, 13.12.2026', eventDisplayName: 'Siege of Osgiliath', eventPreviewBase: 'osgiliath', eventAbout: "The Shadow of Mordor has long been gathering over the realms of the Free Peoples. Now, Sauron moves openly, and the lands of the West stand on the brink of a great war. On 20 June, T.A. 3018, the armies of Mordor launch a great assault upon Osgiliath, the ancient capital of Gondor and a vital stronghold spanning the River Anduin. Boromir and Faramir, sons of Steward Denethor, stand alongside Gondor's defenders against the invading host. The great battle has begun. The War of the Ring is upon Middle-earth!", isNext: true, lore: "Osgiliath was once the proud capital of Gondor, but war and neglect have left its great halls broken and its avenues deserted. The Anduin divides the ruined city, and its crossings remain vital: whoever holds them can threaten the road to Minas Tirith itself.", factions: ['Gondor'], topPlayers: [], screenshots: [], history: [], underSiege: true, attacksFrom: ['Minas Morgul'] },
   { name: 'Minas Tirith', x: 1285, y: 1054, owner: 'gondor', eventDate: 'To Be Announced', lore: "Minas Tirith climbs the Hill of Guard in seven tiers of white stone, with the Citadel standing high above the Pelennor. It is Gondor’s chief seat of power and its strongest shield against Mordor, but the dark gathering in the East leaves little room for complacency.", factions: ['Gondor'], topPlayers: [], screenshots: [], history: [] },
   { name: 'Minas Morgul', x: 1456, y: 1024, owner: 'mordor', eventDate: 'To Be Announced', lore: "Minas Morgul was once Minas Ithil, the fair Tower of the Moon, founded by Isildur to guard Gondor's eastern borders. Standing in a narrow valley beneath the Ephel Dúath, it watched over the passages leading into Mordor. Captured by the Nazgûl, the city was transformed into a stronghold of darkness and sorcery. Its once-white walls now gleam with a pale, corpse-like light, while the waters of the Morgulduin run poisoned through the valley below. From its gates, the servants of Sauron watch over the road leading west into Ithilien.", factions: ['Mordor'], topPlayers: [], screenshots: [], history: [] },
   { name: 'Mount Doom', x: 1575, y: 947, owner: 'mordor', eventDate: 'To Be Announced', lore: "Orodruin burns above the barren plateau of Gorgoroth, its peak wreathed in smoke and fire. The Mountain casts its shadow across Mordor, a constant sign of the dark power rooted in Sauron’s land.", factions: ['Mordor'], topPlayers: [], screenshots: [], history: [] },
@@ -6920,7 +6920,7 @@ function applyDefaultUpcomingEvent() {
   if (westMarch) westMarch.underSiege = false;
   Object.assign(osgiliath, {
     eventDate: 'Sunday, 13.12.2026',
-    eventDateISO: '2026-11-29T18:00:00.000Z',
+    eventDateISO: '2026-12-13T18:00:00.000Z',
     eventDateLabel: 'Sunday, 13.12.2026',
     eventDisplayName: 'Siege of Osgiliath',
     eventPreviewBase: 'osgiliath',
@@ -6953,7 +6953,7 @@ function syncPairedUpcomingEventMarkers() {
   westMarch.underSiege = false;
   Object.assign(osgiliath, {
     eventDate: 'Sunday, 13.12.2026',
-    eventDateISO: '2026-11-29T18:00:00.000Z',
+    eventDateISO: '2026-12-13T18:00:00.000Z',
     eventDateLabel: 'Sunday, 13.12.2026',
     eventDisplayName: 'Siege of Osgiliath',
     eventPreviewBase: 'osgiliath',
@@ -6970,7 +6970,7 @@ let osgiliathEventDateV1Migrated = false;
 try { osgiliathEventDateV1Migrated = !!localStorage.getItem('fi2_osgiliath_event_date_v1'); } catch (e) {}
 if (!osgiliathEventDateV1Migrated && osgiliathEvent && osgiliathEvent.isNext) {
   osgiliathEvent.eventDate = 'Sunday, 13.12.2026';
-  osgiliathEvent.eventDateISO = '2026-11-29T18:00:00.000Z';
+  osgiliathEvent.eventDateISO = '2026-12-13T18:00:00.000Z';
   osgiliathEvent.eventDateLabel = 'Sunday, 13.12.2026';
   try {
     localStorage.setItem(campaignDataStorageKey, JSON.stringify(locations));
@@ -7400,7 +7400,7 @@ if (copyCoordsBtn && coordOutput) {
   });
 }
 
-const eventTargetDate = new Date('2026-11-29T18:00:00.000Z');
+const eventTargetDate = new Date('2026-12-13T18:00:00.000Z');
 const userTimeZone = 'Europe/Warsaw';
 
 function getPart(parts, type) {
